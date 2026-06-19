@@ -1,11 +1,8 @@
 import { create } from "zustand";
 import toast from "react-hot-toast";
 //import { mockBackend } from "../mockBackend";
-import { invoke } from "@tauri-apps/api/core";
-import { persist } from "zustand/middleware";
 import { saveToDevice as backendSave, setKey as backendSetKey, setMacro as backendSetMacro,} from "../utils/backend";
 import { getVersion } from "../utils/backend";
-import { keyOptions } from "../data/keyOptions";
 
 /* TYPES */
 export type Profile = {

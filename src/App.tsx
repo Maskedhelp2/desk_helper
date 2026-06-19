@@ -29,7 +29,6 @@ function App() {
     macros,
     connect,
     deviceName,
-    isLoading,
     setLoading,
     hasUnsavedChanges,
     saveToDevice,
@@ -87,7 +86,7 @@ const keymap =
   const [activeTab, setActiveTab] =
     useState<keyof typeof keyCategories>("standard");
 
-  const [showResetConfirm, setShowResetConfirm] = useState(false);
+  const [, setShowResetConfirm] = useState(false);
 
   const [showUnsavedModal, setShowUnsavedModal] = useState(false);
   const [pendingNavigation, setPendingNavigation] = useState<string | null>(null);

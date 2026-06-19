@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useDeviceStore } from "../store/deviceStore";
 import {
   rebootAndFlash,
 } from "../utils/backend";

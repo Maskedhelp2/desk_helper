@@ -11,7 +11,6 @@ export default function Profiles() {
     renameProfile,
     loadProfile,
     exportProfile,
-    importProfile,
   } = useDeviceStore();
 
   const [newName, setNewName] = useState("");
